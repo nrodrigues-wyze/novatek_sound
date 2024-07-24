@@ -1,0 +1,60 @@
+{
+    "labels": [
+        {
+            "id": 0,
+            "name": "sound_other",
+            "threshold": 1.1,
+            "display_name": "other",
+            "tag_id": 800000
+        },
+        {
+            "id": 1,
+            "name": "dog_barking",
+            "threshold": 0.5,
+            "display_name": "DogBarking",
+            "tag_id": 800002
+        },
+        {
+            "id": 2,
+            "name": "cat_meowing",
+            "threshold": 0.5,
+            "display_name": "CatMeowing",
+            "tag_id": 800003
+        },
+        {
+            "id": 3,
+            "name": "baby_crying",
+            "threshold": 0.5,
+            "display_name": "BabyCrying",
+            "tag_id": 800001
+        },
+        {
+            "id": 4,
+            "name": "people_talking",
+            "threshold": 0.5,
+            "display_name": "Talking",
+            "tag_id": 800004
+        },
+        {
+            "id": 5,
+            "name": "glass_breaking",
+            "threshold": 0.5,
+            "display_name": "GlassBreaking",
+            "tag_id": 800002
+        },
+        {
+            "id": 6,
+            "name": "gun_shooting",
+            "threshold": 0.5,
+            "display_name": "GunShooting",
+            "tag_id": 800003
+        },
+        {
+            "id": 7,
+            "name": "background",
+            "threshold": 0.5,
+            "display_name": "Background",
+            "tag_id": 800001
+        }
+    ]
+}

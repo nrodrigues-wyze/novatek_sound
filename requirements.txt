@@ -1,0 +1,6 @@
+torchlibrosa
+easydict
+audiomentations
+h5py
+pandas==1.1.2
+openpyxl

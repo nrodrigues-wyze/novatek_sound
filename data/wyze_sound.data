@@ -1,0 +1,5 @@
+classes= 8
+train  = /data/data/sound_data/all_train_20240103_real16k.h5
+valid  = /data/data/sound_data/eval_0.5_2_8000_11-11.h5
+names = /data/sound_data/pcppf.names
+backup = backup

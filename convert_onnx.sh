@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python3 convert_onnx.py --model weights/model_novatek_32bit_may_1_input_255_new_clsweights_2_int16/backup28500.pt --cfg cfg/sounddet_16x_8cls_stride_32bit_maxpool_v7_256.cfg --height 101 --width 64
