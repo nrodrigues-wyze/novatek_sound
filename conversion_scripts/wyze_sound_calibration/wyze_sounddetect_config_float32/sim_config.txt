@@ -1,0 +1,60 @@
+#######################################
+#[PATH]
+#######################################
+
+### [GENERAL] 
+## all class name
+[path/label_path] = ..\nvtai_tool\input\data\fakeset\label.txt
+## model 
+[path/model_dir] = ..\nvtai_tool\input\model\customer\wyze_sounddetect
+
+### [TEST DATA]
+## image
+[path/test_img_dir] = ..\nvtai_tool\input\data\wyze_sounddetect
+## ground truth
+[path/test_gt_path] = ..\nvtai_tool\input\data\fakeset\ground_truth.txt
+## list
+[path/test_list_path] = ..\nvtai_tool\input\data\wyze_sounddetect\test_mfcc_list.txt
+
+### [SIMULATION]
+## simulation output root
+[dataset] = fakeset
+[path/out_dir] = ..\nvtai_tool\output\wyze_sounddetect
+
+#######################################
+#[SOURCE] 
+#######################################
+
+## src format
+# JPEG = 0,
+# BIN = 1,
+[src/imgfmt] = 1
+
+## preproc out bin
+# 0: is preproc input bin
+# 1: is preproc output bin
+[src/is_preproc_out_bin] = 0
+
+## src bin file type
+# BLOB_TYPE_INT8 = 0,
+# BLOB_TYPE_UINT8 = 1,
+# BLOB_TYPE_INT16 = 2,
+# BLOB_TYPE_UINT16 = 3,
+[src/bintype] = 6
+
+## src size [1, 4096]
+[src/width] = 64
+[src/height] = 101
+[src/channel] = 1
+[src/batch] = 1
+[src/time] = 1
+
+#######################################
+#[PREPROCESS]
+#######################################
+
+## dump preproc input bin if src format is JPEG
+# 0: skip dump input bin
+# 1: dump input bin
+[src/dump_sdk_in_bin] = 1
+
