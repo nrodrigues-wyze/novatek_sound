@@ -1,0 +1,458 @@
++ NET_TOTAL(SIM_PERF)
+|-- Simulation (cycles) : 213611
+|-- Simulation (bandwidth) : 1034660
+|-- Simulation (dram_bw_in) : 0
+|-- Simulation (dram_bw_out) : 0
+|-- Simulation (dram_bw_para) : 0
+|-- Simulation (sram_bw_in) : 0
+|-- Simulation (sram_bw_out) : 0
+|-- Simulation (sram_bw_para) : 0
+|-- Ideal MACs : 8809536
+|-- Ideal UtRate : 0.071599
+|-- Operation proportion (CNN) : 99.496749
+|-- Operation proportion (NUE) : 0.503251
+|-- Bandwidth proportion (in/out) : 88.066031
+|-- Bandwidth proportion (para) : 11.933969
+|-- Para Reuse Rate : 1.000000
+
+ ================ opId=0 fId=0 [CNN-CONV] #AddEltwiseMeansub0_preproc_elt_meansub@onnx__Reshape_0 ===============
+
++-+ bw_info
+  +-+ bw : 25860
+    |-- bw_in : 25856
+    |-- bw_out : 0
+    |-- bw_para : 4
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :1616
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.006944
+    |-- idea_total_macc : 6464
+
+ ================ opId=1 fId=1 [CNN-CONV] Relu_/module_list.0/activation/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 58980
+    |-- bw_in : 6464
+    |-- bw_out : 52224
+    |-- bw_para : 292
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :14120
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.057790
+    |-- idea_total_macc : 470016
+
+ ================ opId=2 fId=2 [CNN-DWCONV] Relu_/module_list.1/activation_dw/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 104864
+    |-- bw_in : 52224
+    |-- bw_out : 52224
+    |-- bw_para : 416
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :19840
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.041129
+    |-- idea_total_macc : 470016
+
+ ================ opId=3 fId=34 [CNN-CONV] Relu_/module_list.1/activation_dw_1/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 78912
+    |-- bw_in : 52224
+    |-- bw_out : 26112
+    |-- bw_para : 576
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :19712
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.073593
+    |-- idea_total_macc : 835584
+
+ ================ opId=4 fId=35 [CNN-CONV] Relu_/module_list.2/activation/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 184352
+    |-- bw_in : 26112
+    |-- bw_out : 156672
+    |-- bw_para : 1568
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :46464
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.093664
+    |-- idea_total_macc : 2506752
+
+ ================ opId=5 fId=36 [CNN-DWCONV] Relu_/module_list.3/activation_dw/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 197856
+    |-- bw_in : 156672
+    |-- bw_out : 39936
+    |-- bw_para : 1248
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :30336
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.020570
+    |-- idea_total_macc : 359424
+
+ ================ opId=6 fId=132 [CNN-CONV] Relu_/module_list.3/activation_dw_1/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 48320
+    |-- bw_in : 39936
+    |-- bw_out : 6656
+    |-- bw_para : 1728
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :11648
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.095238
+    |-- idea_total_macc : 638976
+
+ ================ opId=7 fId=133 [CNN-CONV] Relu_/module_list.4/activation/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 48160
+    |-- bw_in : 6656
+    |-- bw_out : 39936
+    |-- bw_para : 1568
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :11648
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.095238
+    |-- idea_total_macc : 638976
+
+ ================ opId=8 fId=134 [CNN-DWCONV] Relu_/module_list.5/activation_dw/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 51168
+    |-- bw_in : 39936
+    |-- bw_out : 9984
+    |-- bw_para : 1248
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :8064
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.019345
+    |-- idea_total_macc : 89856
+
+ ================ opId=9 fId=230 [CNN-CONV] Relu_/module_list.5/activation_dw_1/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 16576
+    |-- bw_in : 9984
+    |-- bw_out : 3328
+    |-- bw_para : 3264
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :3392
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.163522
+    |-- idea_total_macc : 319488
+
+ ================ opId=10 fId=231 [CNN-CONV] Relu_/module_list.6/activation/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 29504
+    |-- bw_in : 3328
+    |-- bw_out : 19968
+    |-- bw_para : 6208
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :6208
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.178694
+    |-- idea_total_macc : 638976
+
+ ================ opId=11 fId=232 [CNN-DWCONV] Relu_/module_list.7/activation_dw/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 27840
+    |-- bw_in : 19968
+    |-- bw_out : 5376
+    |-- bw_para : 2496
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :4032
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.020833
+    |-- idea_total_macc : 48384
+
+ ================ opId=12 fId=424 [CNN-CONV] Relu_/module_list.7/activation_dw_1/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 21632
+    |-- bw_in : 5376
+    |-- bw_out : 3584
+    |-- bw_para : 12672
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :3648
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.163743
+    |-- idea_total_macc : 344064
+
+ ================ opId=13 fId=425 [CNN-CONV] Relu_/module_list.8/activation/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 21376
+    |-- bw_in : 3584
+    |-- bw_out : 5376
+    |-- bw_para : 12416
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :5056
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.118143
+    |-- idea_total_macc : 344064
+
+ ================ opId=14 fId=426 [CNN-DWCONV] Relu_/module_list.9/activation_dw/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 13248
+    |-- bw_in : 5376
+    |-- bw_out : 5376
+    |-- bw_para : 2496
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :4416
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.019022
+    |-- idea_total_macc : 48384
+
+ ================ opId=15 fId=618 [CNN-CONV] Add_/Add_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 25216
+    |-- bw_in : 10752
+    |-- bw_out : 1792
+    |-- bw_para : 12672
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :3648
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.163743
+    |-- idea_total_macc : 344064
+
+ ================ opId=16 fId=619 [CNN-CONV] Relu_/module_list.11/activation/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 19584
+    |-- bw_in : 1792
+    |-- bw_out : 5376
+    |-- bw_para : 12416
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :5056
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.118143
+    |-- idea_total_macc : 344064
+
+ ================ opId=17 fId=620 [CNN-DWCONV] Relu_/module_list.12/activation_dw/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 9408
+    |-- bw_in : 5376
+    |-- bw_out : 1536
+    |-- bw_para : 2496
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :2880
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.008333
+    |-- idea_total_macc : 13824
+
+ ================ opId=18 fId=812 [CNN-CONV] Relu_/module_list.12/activation_dw_1/Relu_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 21120
+    |-- bw_in : 1536
+    |-- bw_out : 768
+    |-- bw_para : 18816
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :4224
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.060606
+    |-- idea_total_macc : 147456
+
+ ================ opId=19 fId=813 [CNN-CONV] MaxPool_/module_list.14/maxpool/MaxPool_output_0_Y ===============
+
++-+ bw_info
+  +-+ bw : 26048
+    |-- bw_in : 768
+    |-- bw_out : 512
+    |-- bw_para : 24768
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :6528
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.052288
+    |-- idea_total_macc : 196608
+
+ ================ opId=20 fId=814 [NUE-SVM] Gemm_183_Y ===============
+
++-+ bw_info
+  +-+ bw : 4636
+    |-- bw_in : 512
+    |-- bw_out : 16
+    |-- bw_para : 4108
+    |-- dram_bw_in : 0
+    |-- dram_bw_out : 0
+    |-- dram_bw_para : 0
+    |-- sram_bw_in : 0
+    |-- sram_bw_out : 0
+    |-- sram_bw_para : 0
+
++-+ cycle_info
+  +-+ cycle :1075
+
++-+ ut_rate_info
+  +-+ ut_rate : 0.006615
+    |-- idea_total_macc : 4096
+

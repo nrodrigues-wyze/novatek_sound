@@ -1,0 +1,271 @@
+
+ ================== fusion layer index - 0 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : #AddEltwiseMeansub0_preproc_elt_meansub@onnx__Reshape_0
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 8 HW_ELTWISE
+|-+ [1th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 4 HW_ACT
+
+ ================== fusion layer index - 1 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.0/Conv2d/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 2 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.1/Conv2d_dw/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 3 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.1/Conv2d1x1/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 4 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.2/Conv2d/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 5 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.3/Conv2d_dw/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 6 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.3/Conv2d1x1/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 7 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.4/Conv2d/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 8 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.5/Conv2d_dw/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 9 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.5/Conv2d1x1/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 10 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.6/Conv2d/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 11 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.7/Conv2d_dw/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 12 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.7/Conv2d1x1/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 13 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.8/Conv2d/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 14 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.9/Conv2d_dw/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 15 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.9/Conv2d1x1/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 8 HW_ELTWISE
+|-+ [3th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [4th HW_FUNC_PARM], type : 4 HW_ACT
+
+ ================== fusion layer index - 16 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.11/Conv2d/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 17 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.12/Conv2d_dw/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 18 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.12/Conv2d1x1/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+
+ ================== fusion layer index - 19 ================== 
+
++ basic_info
+|-- mode : 1
+|-- layer_name : Conv_/module_list.13/Conv2d/Conv_output_0_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 2 HW_CONV
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [2th HW_FUNC_PARM], type : 3 HW_BNSCALE
+|-+ [3th HW_FUNC_PARM], type : 4 HW_ACT
+|-+ [4th HW_FUNC_PARM], type : 8 HW_ELTWISE
+|-+ [5th HW_FUNC_PARM], type : 5 HW_POOL
+
+ ================== fusion layer index - 20 ================== 
+
++ basic_info
+|-- mode : 3
+|-- layer_name : Gemm_183_Y
+
++ p_func_parm : 
+|-+ [0th HW_FUNC_PARM], type : 9 HW_FC
+|-+ [1th HW_FUNC_PARM], type : 4 HW_ACT

@@ -1,0 +1,1182 @@
+ ================== sim_info ================== 
+|-- blob_num : 1
+|-+ [0th PREPROC_INFO]
+  |-- tensor_name : onnx__Reshape_0
+  |-+ preproc_gold
+    |-+ net_in_size
+    |-- dim : 64 101 1 1 1
+    |-- len : 6464
+    |-- order : 0
+    |-+ crop
+      |-- net_en : 0
+      |-- hw_en : 0
+      |-- mode : 0
+      |-- ratio : 0.0000
+      |-- width : 0
+      |-- height : 0
+      |-- x_shift : 0
+      |-- y_shift : 0
+      |-- ratio_w : 0.0000
+      |-- ratio_h : 0.0000
+      |-- ratio_x_shift : 0.0000
+      |-- ratio_y_shift : 0.0000
+    |-+ resize
+      |-- net_en : 0
+      |-- hw_en : 0
+      |-- mode : 0
+      |-- width : 0
+      |-- height : 0
+      |-- max_wh : 0
+      |-- min_wh : 0
+      |-- ratio_w : 0.0000
+      |-- ratio_h : 0.0000
+    |-+ rotate
+      |-- net_en : 0
+      |-- hw_en : 0
+      |-- hw_weight_en : 0
+      |-- hw_mean_en : 0
+      |-- degree : 0
+    |-+ flip
+      |-- net_en : 0
+      |-- hw_en : 0
+      |-- hw_weight_en : 0
+      |-- hw_mean_en : 0
+      |-- dir : 0
+    |-+ permute
+      |-- net_en : 0
+      |-- hw_en : 0
+      |-- hw_weight_en : 0
+      |-- hw_mean_en : 0
+    |-+ meansub
+      |-- net_en : 0
+      |-- hw_en : 0
+      |-- mode : 0
+      |-- fmt : 0
+    |-+ pad
+      |-- net_en : 0
+      |-- hw_en : 0
+      |-- mode : 0
+      |-- val : 0.0000
+      |-- out_w : 0
+      |-- out_h : 0
+      |-- top_num : 0
+      |-- bottom_num : 0
+      |-- left_num : 0
+      |-- right_num : 0
+      |-- top_ratio : 0.0000
+      |-- bottom_ratio : 0.0000
+      |-- left_ratio : 0.0000
+      |-- right_ratio : 0.0000
+      |-- rgb2bgr_en : 0
+      |-- mean_path : /data/novatek/0609_Novaic_v01.09.2306072_release_exe/Tool/release/release/ai_tool/novatek/novaic/toolchain/../test-tutorial/calib_tool/../calib_tool/input/model/customer/wyze_sounddetect_16bit_july/mean_data.txt
+      |-- in_fmt : 3
+      |-- out_fmt : 4
+      |-+ normalize
+        |-- net_en : 0
+        |-- hw_en : 0
+        |-- scale : 1.000000
+  |-+ preproc_sdk
+    |-- preproc_hw_en : 0
+    |-- rgb2bgr_en : 0
+    |-- eltwise_meansub_en : 1
+    |-- rotate_en : 0
+    |-- permute_en : 0
+    |-+ in_size
+    |-- dim : 64 101 1 1 1
+    |-- len : 6464
+    |-+ out_size
+    |-- dim : 64 101 1 1 1
+    |-- len : 6464
+    |-+ in_bit
+    |-- bitdepth : 16
+    |-- sign_bit_num : 1
+    |-- int_bit_num : 8
+    |-- frac_bit_num : 7
+    |-+ out_bit
+    |-- bitdepth : 8
+    |-- sign_bit_num : 0
+    |-- int_bit_num : 8
+    |-- frac_bit_num : 0
+      |-- in_type : 2
+      |-- out_type : 1
+      |-- in_fmt : 3
+    |-- preproc_mctrl : 0
+  |-+ special_gold
+    |-- meansub_en : 0
+    |-+ crop_before_meansub
+      |-- crop_x_start : 0
+      |-- crop_x_end : 0
+      |-- crop_y_start : 0
+      |-- crop_y_end : 0
+      |-- crop_ch_start : 0
+      |-- crop_ch_end : 0
+    |-+ crop_after_meansub
+      |-- crop_x_start : 0
+      |-- crop_x_end : 0
+      |-- crop_y_start : 0
+      |-- crop_y_end : 0
+      |-- crop_ch_start : 0
+      |-- crop_ch_end : 0
+  |-+ special_sdk
+    |-- top_pad_num : 0
+    |-- bottom_pad_num : 0
+    |-- left_pad_num : 0
+    |-- right_pad_num : 0
+
++ postproc_info
+|-- net_en : 0
+|-- hw_en : 0
+|-- mode : 0
++ compare_info
+|-- process_num : 21
+|-+ process_info : 
+  |-+ [0th PROCESS_INFO]
+    |-- tensor_name : onnx__Reshape_0
+    |-- origin_name : #AddEltwiseMeansub0_preproc_elt_meansub@onnx__Reshape_0
+    |-- do_comparision : 0
+    |-- eng_type : 0
+    |-- process_layer_idx : 0
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 25855
+      |-+ size
+        |-- dim : 64 101 1 1 1
+        |-- len : 6464
+      |-+ buff_size
+        |-- dim : 64 101 1 1 1
+        |-- len : 6464
+      |-+ ofs
+        |-- lofs : 64
+        |-- ch_ofs : 6464
+        |-- batch_ofs : 6464
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 8
+        |-- frac_bit_num : 0
+      |-- osf : 1.00000000
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [1th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.0/activation/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.0/activation/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 1
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 208895
+      |-+ size
+        |-- dim : 32 51 32 1 1
+        |-- len : 52224
+      |-+ buff_size
+        |-- dim : 32 51 32 1 1
+        |-- len : 52224
+      |-+ ofs
+        |-- lofs : 32
+        |-- ch_ofs : 1632
+        |-- batch_ofs : 52224
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 4
+        |-- frac_bit_num : 4
+      |-- osf : 0.74928987
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [2th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.1/activation_dw/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.1/activation_dw/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 2
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 208895
+      |-+ size
+        |-- dim : 32 51 32 1 1
+        |-- len : 52224
+      |-+ buff_size
+        |-- dim : 32 51 32 1 1
+        |-- len : 52224
+      |-+ ofs
+        |-- lofs : 32
+        |-- ch_ofs : 1632
+        |-- batch_ofs : 52224
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 5
+      |-- osf : 0.67467576
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [3th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.1/activation_dw_1/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.1/activation_dw_1/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 3
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 104447
+      |-+ size
+        |-- dim : 32 51 16 1 1
+        |-- len : 26112
+      |-+ buff_size
+        |-- dim : 32 51 16 1 1
+        |-- len : 26112
+      |-+ ofs
+        |-- lofs : 32
+        |-- ch_ofs : 1632
+        |-- batch_ofs : 26112
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 5
+      |-- osf : 0.70509464
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [4th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.2/activation/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.2/activation/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 4
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 626687
+      |-+ size
+        |-- dim : 32 51 96 1 1
+        |-- len : 156672
+      |-+ buff_size
+        |-- dim : 32 51 96 1 1
+        |-- len : 156672
+      |-+ ofs
+        |-- lofs : 32
+        |-- ch_ofs : 1632
+        |-- batch_ofs : 156672
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 5
+      |-- osf : 0.50347155
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [5th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.3/activation_dw/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.3/activation_dw/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 5
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 159743
+      |-+ size
+        |-- dim : 16 26 96 1 1
+        |-- len : 39936
+      |-+ buff_size
+        |-- dim : 16 26 96 1 1
+        |-- len : 39936
+      |-+ ofs
+        |-- lofs : 16
+        |-- ch_ofs : 416
+        |-- batch_ofs : 39936
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 2
+        |-- frac_bit_num : 6
+      |-- osf : 0.57965624
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [6th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.3/activation_dw_1/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.3/activation_dw_1/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 6
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 26623
+      |-+ size
+        |-- dim : 16 26 16 1 1
+        |-- len : 6656
+      |-+ buff_size
+        |-- dim : 16 26 16 1 1
+        |-- len : 6656
+      |-+ ofs
+        |-- lofs : 16
+        |-- ch_ofs : 416
+        |-- batch_ofs : 6656
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 5
+      |-- osf : 0.57173628
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [7th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.4/activation/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.4/activation/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 7
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 159743
+      |-+ size
+        |-- dim : 16 26 96 1 1
+        |-- len : 39936
+      |-+ buff_size
+        |-- dim : 16 26 96 1 1
+        |-- len : 39936
+      |-+ ofs
+        |-- lofs : 16
+        |-- ch_ofs : 416
+        |-- batch_ofs : 39936
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 5
+      |-- osf : 0.56615973
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [8th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.5/activation_dw/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.5/activation_dw/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 8
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 39935
+      |-+ size
+        |-- dim : 8 13 96 1 1
+        |-- len : 9984
+      |-+ buff_size
+        |-- dim : 8 13 96 1 1
+        |-- len : 9984
+      |-+ ofs
+        |-- lofs : 8
+        |-- ch_ofs : 104
+        |-- batch_ofs : 9984
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 5
+      |-- osf : 0.56058109
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [9th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.5/activation_dw_1/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.5/activation_dw_1/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 9
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 13311
+      |-+ size
+        |-- dim : 8 13 32 1 1
+        |-- len : 3328
+      |-+ buff_size
+        |-- dim : 8 13 32 1 1
+        |-- len : 3328
+      |-+ ofs
+        |-- lofs : 8
+        |-- ch_ofs : 104
+        |-- batch_ofs : 3328
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 5
+      |-- osf : 0.72357422
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [10th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.6/activation/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.6/activation/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 10
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 79871
+      |-+ size
+        |-- dim : 8 13 192 1 1
+        |-- len : 19968
+      |-+ buff_size
+        |-- dim : 8 13 192 1 1
+        |-- len : 19968
+      |-+ ofs
+        |-- lofs : 8
+        |-- ch_ofs : 104
+        |-- batch_ofs : 19968
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 5
+      |-- osf : 0.73580140
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [11th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.7/activation_dw/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.7/activation_dw/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 11
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 21503
+      |-+ size
+        |-- dim : 4 7 192 1 1
+        |-- len : 5376
+      |-+ buff_size
+        |-- dim : 4 7 192 1 1
+        |-- len : 5376
+      |-+ ofs
+        |-- lofs : 4
+        |-- ch_ofs : 28
+        |-- batch_ofs : 5376
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 5
+      |-- osf : 0.54702485
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [12th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.7/activation_dw_1/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.7/activation_dw_1/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 12
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 3583
+      |-+ size
+        |-- dim : 4 7 64 1 1
+        |-- len : 1792
+      |-+ buff_size
+        |-- dim : 4 7 64 1 1
+        |-- len : 1792
+      |-+ ofs
+        |-- lofs : 8
+        |-- ch_ofs : 56
+        |-- batch_ofs : 3584
+      |-+ out_bit
+        |-- bitdepth : 16
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 13
+      |-- osf : 0.97908849
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT16
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [13th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.8/activation/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.8/activation/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 13
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 21503
+      |-+ size
+        |-- dim : 4 7 192 1 1
+        |-- len : 5376
+      |-+ buff_size
+        |-- dim : 4 7 192 1 1
+        |-- len : 5376
+      |-+ ofs
+        |-- lofs : 4
+        |-- ch_ofs : 28
+        |-- batch_ofs : 5376
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 4
+        |-- frac_bit_num : 4
+      |-- osf : 0.50447100
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [14th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.9/activation_dw/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.9/activation_dw/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 14
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 21503
+      |-+ size
+        |-- dim : 4 7 192 1 1
+        |-- len : 5376
+      |-+ buff_size
+        |-- dim : 4 7 192 1 1
+        |-- len : 5376
+      |-+ ofs
+        |-- lofs : 4
+        |-- ch_ofs : 28
+        |-- batch_ofs : 5376
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 5
+      |-- osf : 0.59792596
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [15th PROCESS_INFO]
+    |-- tensor_name : Add_/Add_output_0_Y
+    |-- origin_name : Add_/Add_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 15
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 7167
+      |-+ size
+        |-- dim : 4 7 64 1 1
+        |-- len : 1792
+      |-+ buff_size
+        |-- dim : 4 7 64 1 1
+        |-- len : 1792
+      |-+ ofs
+        |-- lofs : 4
+        |-- ch_ofs : 28
+        |-- batch_ofs : 1792
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 4
+        |-- frac_bit_num : 4
+      |-- osf : 1.00000000
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [16th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.11/activation/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.11/activation/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 16
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 21503
+      |-+ size
+        |-- dim : 4 7 192 1 1
+        |-- len : 5376
+      |-+ buff_size
+        |-- dim : 4 7 192 1 1
+        |-- len : 5376
+      |-+ ofs
+        |-- lofs : 4
+        |-- ch_ofs : 28
+        |-- batch_ofs : 5376
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 4
+        |-- frac_bit_num : 4
+      |-- osf : 0.51893038
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [17th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.12/activation_dw/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.12/activation_dw/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 17
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 6143
+      |-+ size
+        |-- dim : 2 4 192 1 1
+        |-- len : 1536
+      |-+ buff_size
+        |-- dim : 2 4 192 1 1
+        |-- len : 1536
+      |-+ ofs
+        |-- lofs : 2
+        |-- ch_ofs : 8
+        |-- batch_ofs : 1536
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 5
+      |-- osf : 0.56833756
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [18th PROCESS_INFO]
+    |-- tensor_name : Relu_/module_list.12/activation_dw_1/Relu_output_0_Y
+    |-- origin_name : Relu_/module_list.12/activation_dw_1/Relu_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 18
+    |-- process_blob_idx : 0
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 3071
+      |-+ size
+        |-- dim : 2 4 96 1 1
+        |-- len : 768
+      |-+ buff_size
+        |-- dim : 2 4 96 1 1
+        |-- len : 768
+      |-+ ofs
+        |-- lofs : 2
+        |-- ch_ofs : 8
+        |-- batch_ofs : 768
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 3
+        |-- frac_bit_num : 5
+      |-- osf : 0.58238953
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [19th PROCESS_INFO]
+    |-- tensor_name : MaxPool_/module_list.14/maxpool/MaxPool_output_0_Y
+    |-- origin_name : MaxPool_/module_list.14/maxpool/MaxPool_output_0_Y
+    |-- do_comparision : 1
+    |-- eng_type : 0
+    |-- process_layer_idx : 19
+    |-- process_blob_idx : 1
+    |-- preserved : 0
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 2047
+      |-+ size
+        |-- dim : 1 2 256 1 1
+        |-- len : 512
+      |-+ buff_size
+        |-- dim : 1 2 256 1 1
+        |-- len : 512
+      |-+ ofs
+        |-- lofs : 1
+        |-- ch_ofs : 2
+        |-- batch_ofs : 512
+      |-+ out_bit
+        |-- bitdepth : 8
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 2
+        |-- frac_bit_num : 6
+      |-- osf : 0.82816571
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_UINT8
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8
+  |-+ [20th PROCESS_INFO]
+    |-- tensor_name : Gemm_183_Y
+    |-- origin_name : Gemm_183_Y
+    |-- do_comparision : 1
+    |-- eng_type : 1
+    |-- process_layer_idx : 20
+    |-- process_blob_idx : 0
+    |-- preserved : 1
+    |-+ sim_feat
+      |-- start_addr : 0
+      |-- end_addr : 15
+      |-+ size
+        |-- dim : 1 1 8 1 1
+        |-- len : 8
+      |-+ buff_size
+        |-- dim : 1 1 8 1 1
+        |-- len : 8
+      |-+ ofs
+        |-- lofs : 2
+        |-- ch_ofs : 2
+        |-- batch_ofs : 16
+      |-+ out_bit
+        |-- bitdepth : 16
+        |-- sign_bit_num : 1
+        |-- int_bit_num : 5
+        |-- frac_bit_num : 10
+      |-- osf : 1.00000000
+      |-- dim_order : 1 2 3 4 5
+      |-- fixed_type : BLOB_TYPE_INT16
+    |-+ net_feat
+      |-- start_addr : 0
+      |-- end_addr : 0
+      |-+ size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ buff_size
+        |-- dim : 0 0 0 0 0
+        |-- len : 0
+      |-+ ofs
+        |-- lofs : 0
+        |-- ch_ofs : 0
+        |-- batch_ofs : 0
+      |-+ out_bit
+        |-- bitdepth : 0
+        |-- sign_bit_num : 0
+        |-- int_bit_num : 0
+        |-- frac_bit_num : 0
+      |-- osf : 0.00000000
+      |-- dim_order : 0 0 0 0 0
+      |-- fixed_type : BLOB_TYPE_INT8

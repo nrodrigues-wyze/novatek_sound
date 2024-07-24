@@ -1,0 +1,243 @@
+[NvtAICnnConvFusion]
+input: onnx__Reshape_0[1,1,101,64],AddEltwiseMeansub0_mean[1,1,101,64]
+output: #AddEltwiseMeansub0_preproc_elt_meansub@onnx__Reshape_0[1,1,101,64]
+attributes:
+  eltwise(en=1, mode=Add, coeff=[1.000000,-1.000000])
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.9/activation_dw/Relu_output_0_Y[1,192,7,4],Conv_onnx::Conv_227_W[64,192,1,1],Conv_onnx::Conv_228_B[64],Relu_/module_list.7/activation_dw_1/Relu_output_0_Y[1,64,7,4]
+output: Add_/Add_output_0_Y[1,64,7,4]
+attributes:
+  conv(en=1, group=1, kernel=[1,1], pads=[0,0,0,0], strides=[1,1], image_mode=0)
+  preact(en=1, mode=Relu)
+  eltwise(en=1, mode=Add, coeff=[1.000000,1.000000])
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.12/activation_dw_1/Relu_output_0_Y[1,96,4,2],Conv_onnx::Conv_239_W[256,96,1,1],Conv_onnx::Conv_240_B[256]
+output: MaxPool_/module_list.14/maxpool/MaxPool_output_0_Y[1,256,2,1]
+attributes:
+  conv(en=1, group=1, kernel=[1,1], pads=[0,0,0,0], strides=[1,1], image_mode=0)
+  act(en=1, mode=Relu)
+  pooling(en=1, mode=Max, cal_type=floor, kernel=[2,2], pads=[0,0,0,0], strides=[2,2], countIncludePad=1, avg_mul=0, avg_shf=0)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=1, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: #AddEltwiseMeansub0_preproc_elt_meansub@onnx__Reshape_0[1,1,101,64],Conv_onnx::Conv_185_W[32,1,3,3],Conv_onnx::Conv_186_B[32]
+output: Relu_/module_list.0/activation/Relu_output_0_Y[1,32,51,32]
+attributes:
+  conv(en=1, group=1, kernel=[3,3], pads=[1,1,1,1], strides=[2,2], image_mode=1)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.0/activation/Relu_output_0_Y[1,32,51,32],Conv_onnx::Conv_188_W[32,1,3,3],Conv_onnx::Conv_189_B[32]
+output: Relu_/module_list.1/activation_dw/Relu_output_0_Y[1,32,51,32]
+attributes:
+  conv(en=1, group=32, kernel=[3,3], pads=[1,1,1,1], strides=[1,1], image_mode=1)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.1/activation_dw/Relu_output_0_Y[1,32,51,32],Conv_onnx::Conv_191_W[16,32,1,1],Conv_onnx::Conv_192_B[16]
+output: Relu_/module_list.1/activation_dw_1/Relu_output_0_Y[1,16,51,32]
+attributes:
+  conv(en=1, group=1, kernel=[1,1], pads=[0,0,0,0], strides=[1,1], image_mode=0)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Add_/Add_output_0_Y[1,64,7,4],Conv_onnx::Conv_230_W[192,64,1,1],Conv_onnx::Conv_231_B[192]
+output: Relu_/module_list.11/activation/Relu_output_0_Y[1,192,7,4]
+attributes:
+  conv(en=1, group=1, kernel=[1,1], pads=[0,0,0,0], strides=[1,1], image_mode=0)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.11/activation/Relu_output_0_Y[1,192,7,4],Conv_onnx::Conv_233_W[192,1,3,3],Conv_onnx::Conv_234_B[192]
+output: Relu_/module_list.12/activation_dw/Relu_output_0_Y[1,192,4,2]
+attributes:
+  conv(en=1, group=192, kernel=[3,3], pads=[1,1,1,1], strides=[2,2], image_mode=1)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.12/activation_dw/Relu_output_0_Y[1,192,4,2],Conv_onnx::Conv_236_W[96,192,1,1],Conv_onnx::Conv_237_B[96]
+output: Relu_/module_list.12/activation_dw_1/Relu_output_0_Y[1,96,4,2]
+attributes:
+  conv(en=1, group=1, kernel=[1,1], pads=[0,0,0,0], strides=[1,1], image_mode=0)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.1/activation_dw_1/Relu_output_0_Y[1,16,51,32],Conv_onnx::Conv_194_W[96,16,1,1],Conv_onnx::Conv_195_B[96]
+output: Relu_/module_list.2/activation/Relu_output_0_Y[1,96,51,32]
+attributes:
+  conv(en=1, group=1, kernel=[1,1], pads=[0,0,0,0], strides=[1,1], image_mode=0)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.2/activation/Relu_output_0_Y[1,96,51,32],Conv_onnx::Conv_197_W[96,1,3,3],Conv_onnx::Conv_198_B[96]
+output: Relu_/module_list.3/activation_dw/Relu_output_0_Y[1,96,26,16]
+attributes:
+  conv(en=1, group=96, kernel=[3,3], pads=[1,1,1,1], strides=[2,2], image_mode=1)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.3/activation_dw/Relu_output_0_Y[1,96,26,16],Conv_onnx::Conv_200_W[16,96,1,1],Conv_onnx::Conv_201_B[16]
+output: Relu_/module_list.3/activation_dw_1/Relu_output_0_Y[1,16,26,16]
+attributes:
+  conv(en=1, group=1, kernel=[1,1], pads=[0,0,0,0], strides=[1,1], image_mode=0)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.3/activation_dw_1/Relu_output_0_Y[1,16,26,16],Conv_onnx::Conv_203_W[96,16,1,1],Conv_onnx::Conv_204_B[96]
+output: Relu_/module_list.4/activation/Relu_output_0_Y[1,96,26,16]
+attributes:
+  conv(en=1, group=1, kernel=[1,1], pads=[0,0,0,0], strides=[1,1], image_mode=0)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.4/activation/Relu_output_0_Y[1,96,26,16],Conv_onnx::Conv_206_W[96,1,3,3],Conv_onnx::Conv_207_B[96]
+output: Relu_/module_list.5/activation_dw/Relu_output_0_Y[1,96,13,8]
+attributes:
+  conv(en=1, group=96, kernel=[3,3], pads=[1,1,1,1], strides=[2,2], image_mode=1)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.5/activation_dw/Relu_output_0_Y[1,96,13,8],Conv_onnx::Conv_209_W[32,96,1,1],Conv_onnx::Conv_210_B[32]
+output: Relu_/module_list.5/activation_dw_1/Relu_output_0_Y[1,32,13,8]
+attributes:
+  conv(en=1, group=1, kernel=[1,1], pads=[0,0,0,0], strides=[1,1], image_mode=0)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.5/activation_dw_1/Relu_output_0_Y[1,32,13,8],Conv_onnx::Conv_212_W[192,32,1,1],Conv_onnx::Conv_213_B[192]
+output: Relu_/module_list.6/activation/Relu_output_0_Y[1,192,13,8]
+attributes:
+  conv(en=1, group=1, kernel=[1,1], pads=[0,0,0,0], strides=[1,1], image_mode=0)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.6/activation/Relu_output_0_Y[1,192,13,8],Conv_onnx::Conv_215_W[192,1,3,3],Conv_onnx::Conv_216_B[192]
+output: Relu_/module_list.7/activation_dw/Relu_output_0_Y[1,192,7,4]
+attributes:
+  conv(en=1, group=192, kernel=[3,3], pads=[1,1,1,1], strides=[2,2], image_mode=1)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.7/activation_dw/Relu_output_0_Y[1,192,7,4],Conv_onnx::Conv_218_W[64,192,1,1],Conv_onnx::Conv_219_B[64]
+output: Relu_/module_list.7/activation_dw_1/Relu_output_0_Y[1,64,7,4]
+attributes:
+  conv(en=1, group=1, kernel=[1,1], pads=[0,0,0,0], strides=[1,1], image_mode=0)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.7/activation_dw_1/Relu_output_0_Y[1,64,7,4],Conv_onnx::Conv_221_W[192,64,1,1],Conv_onnx::Conv_222_B[192]
+output: Relu_/module_list.8/activation/Relu_output_0_Y[1,192,7,4]
+attributes:
+  conv(en=1, group=1, kernel=[1,1], pads=[0,0,0,0], strides=[1,1], image_mode=0)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAICnnConvFusion]
+input: Relu_/module_list.8/activation/Relu_output_0_Y[1,192,7,4],Conv_onnx::Conv_224_W[192,1,3,3],Conv_onnx::Conv_225_B[192]
+output: Relu_/module_list.9/activation_dw/Relu_output_0_Y[1,192,7,4]
+attributes:
+  conv(en=1, group=192, kernel=[3,3], pads=[1,1,1,1], strides=[1,1], image_mode=1)
+  act(en=1, mode=Relu)
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[NvtAINueSVM]
+input: Flatten_/module_list.15/FlattenInput/Flatten_output_0_Y[1,512],module_list.15.FC_Layer.weight<clone><clone>[8,512],module_list.15.FC_Layer.bias[8]
+output: Gemm_183_Y[1,8]
+attributes:
+
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=0, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+[Reshape]
+input: MaxPool_/module_list.14/maxpool/MaxPool_output_0_Y[1,256,2,1],ReplaceSqueezeUnsqueezeWithReshape0_shape[2]
+output: Flatten_/module_list.15/FlattenInput/Flatten_output_0_Y[1,512]
+attributes:
+  shape=[1,512]
+  pair=
+tags:
+  illegalLayer=0, isSplit=0, isSvmStripe=0, stripeGroup=0, isConvReluConcat=0, normscale=1.000000, isSigmoid=0, nextIsROIpoolORSVM=1, prevIsROIpoolORSVM=0, isThreshold=0, isPreluOfSkymizer=0, isClip=0, isDeconv=0
+, opToBn=0, lstmGroup=0, isHwBatch=0, isNextDWCorrOp= 0, lstmWeightSharingGroup=-1, inRemainSrcEn=0, nextIsHwBatch=0, execute=1, postProcCeil=0, isLstmOut=0, hpConvIdx=-1
+, isFirstConvChn=0, isLastConvChn=0, clipReluMax=-1.000000, tilingIdx=-1, tilingWeightIdx=-1, tilingWeightSize=0, tilingWeightOffset=0, isFirstTilingOp=0, isLastTilingOp=0, isPreProcOp=0, isUpToLeaky=0
+
+OutputOperator inputs=Gemm_183_Y

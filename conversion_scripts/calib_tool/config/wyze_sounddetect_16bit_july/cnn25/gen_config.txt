@@ -1,0 +1,197 @@
+
+#######################################
+#[PATH]
+#######################################
+
+### [GENERAL]
+## model 
+[path/model_dir] = ../calib_tool/input/model/customer/wyze_sounddetect_16bit_july
+
+## mean 
+[path/mean_path] = ../calib_tool/input/model/customer/wyze_sounddetect_16bit_july/mean_data.txt
+
+### [REFERENCE DATA]
+## img 
+[path/ref_img_dir] = ../calib_tool/input/data/wyze_sounddetect_16bit_july
+## list
+[path/ref_list_path] = ../calib_tool/input/data/wyze_sounddetect_16bit_july/ref_mfcc_list.txt
+
+### [GENERATOR] 
+## gen output root
+[path/out_dir] = ../calib_tool/output
+
+#######################################
+#[REFERENCE DATA]
+#######################################
+
+## img num [1, 1000]
+[ref_data/num] = 10
+
+#######################################
+#[FUNCTION]
+#######################################
+
+### [MULTISCALE]
+## model mode
+# 0: single-scaled net input, 1 nvt_model
+# 1: multi-scaled net input, multiple nvt_model, sdk dynamically choose proper model to use
+[multiscale/en] = 0
+
+## net input sizes(preproc output sizes) for multi-scaled model
+# please modify the scale in descending order
+# ex. [multiscale/width] =  1920, 1280
+#     [multiscale/height] = 1080,  720
+# there are 2 sizes of net input => 1920x1080, 1280x720
+[multiscale/width] = 1920, 1280
+[multiscale/height] = 1080, 720
+
+### [PREPROCESS]
+
+## NUE2 input format
+
+# 0: FMT_YONLY
+# 1: FMT_RGB
+# 2: FMT_YUV420
+# 3: FMT_FEAT
+# 4: FMT_BGR
+# 5: x
+[preproc/in/fmt] = 3
+
+## input type for FMT_FEAT
+# 0: TYPE_INT8
+# 1: TYPE_UINT8
+# 2: TYPE_INT16
+# 3: TYPE_UINT16
+# 6: TYPE_FLOAT32
+[preproc/in/type] = 2
+
+## input frac bit num for FMT_FEAT
+[preproc/in/frac_bit_num] = 7
+
+## input size[1, 4096]
+# for [preproc/in/fmt] == "FMT_FEAT", this means input size
+# for [preproc/in/fmt] != "FMT_FEAT", this input size is just an exmaple, actual input size will be dynamically modified in sdk
+[preproc/in/width] = 64
+[preproc/in/height] = 101
+[preproc/in/channel] = 1
+[preproc/in/batch] = 1
+[preproc/in/time] = 1
+
+# 0: RESIZE_WH
+# 1: x
+# 2: x
+# 3: RESIZE_WH_WITH_TILING
+[preproc/resize/mode] = 0
+
+## RESIZE_WH PARAMETERS
+## width & height [1, 1920]
+[preproc/resize/width] = 224
+[preproc/resize/height] = 224
+
+## [MEAN SUB]
+# 0: disable meansub
+# 1: enable meansub
+[preproc/meansub/en] = 0
+
+## mean data mode
+# 0: MEANSUB_DC
+# 1: MEANSUB_PLANAR
+[preproc/meansub/mode] = 0
+
+## mean data format
+# 0: TXT
+# 1: BINARYPROTO
+[preproc/meansub/fmt] = 0
+
+## mean_path mean data fmt type
+# 0: FMT_YONLY
+# 1: FMT_RGB
+# 2: x
+# 3: FMT_FEAT
+# 4: FMT_BGR
+# 5: x
+[preproc/meansub/fmt_type] = 1
+
+## [NORMALIZE]
+# 0: disable normalization
+# 1: enable normalization
+[preproc/normalize/en] = 0
+
+## normalize scale
+[preproc/normalize/scale] = 1.00000000
+
+## [NUE2 OUT FORMAT]
+# 0: PREPROC_OUT_FMT_YONLY
+# 1: x
+# 2: PREPROC_OUT_FMT_RGB
+# 3: PREPROC_OUT_FMT_BGR
+# 4: PREPROC_OUT_FMT_FEAT
+[preproc/out_fmt] = 4
+
+### [POSTPROCESS]
+# 0: disable post process (classify accuracy)
+# 1: enable post process (classify accuracy)
+[postproc/en] = 0
+
+#######################################
+#[FEATURE PRECISION]
+#######################################
+### [INPUT PRECISION]
+## 16bit input to functions, this priority is higher than [precision/mode]
+# 0: disable 16bit
+# 1: enable 16bit
+[precision/in_hp/conv_en] = 0
+[precision/in_hp/bnscale_en] = 0
+[precision/in_hp/deconv_en] = 0
+[precision/in_hp/fc_en] = 0
+[precision/in_hp/eltwise_en] = 0
+[precision/in_hp/roipool_en] = 0
+
+### [BALANCE WEIGHT]
+## outrange rate [1, 1023]
+[precision/balance_weight/out_range_ratio] = 1000.000000
+
+### [REF RELU OUTPUT]
+# 0: current reference its layer out
+# 1: current reference next relu out
+[precision/ref_relu_outval_en] = 1
+
+### [CROSS LAYER EQUALIZATION]
+# 0: turn off CLE
+# 1: turn on CLE
+[precision/cle_en] = 1
+
+#######################################
+#[WEIGHT COMPRESSION]
+#######################################
+# 0: disable quatization
+# 1: enable quatization
+[compression/method/quan_en] = 1
+
+# 0: disable variable length coding
+# 1: enable variable length coding
+[compression/method/vlc_en] = 0
+
+#######################################
+#[PERFORMANCE MODE]
+#######################################
+
+### [PERFORMANCE MODE]
+# 0: APP_MODE
+# 1: LINKED_LIST_SINGLE
+[performance/mode] = 0
+
+### [MEMORY MODE]
+# 0: disable shrink memory
+# 1: enable shrink memory
+[performance/shrink_en] = 1
+
+### [CNN ENGINE MODE] # only 525 can support CNN2
+# 0: CNN1
+# 1: CNN2
+[performance/cnn_engine_mode] = 0
+
+### [JOB SCHEDULING]
+# 0: disable job scheduling
+# 1: enable job scheduling
+[performance/job_schedule_en] = 0

@@ -1,0 +1,483 @@
+
+
+ ================== fusion layer index - 0 ================== 
+
++ buffer_info
+|-- in_num : 0
+|-+ p_in : 
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : #AddEltwiseMeansub0_preproc_elt_meansub@onnx__Reshape_0
+    |-- byte_len : 6464
+    |-+ size : 
+      |-- dim : 64 101 1 1 1
+      |-- len : 6464
+
+
+ ================== fusion layer index - 1 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : #AddEltwiseMeansub0_preproc_elt_meansub@onnx__Reshape_0
+    |-- byte_len : 6464
+    |-+ size : 
+      |-- dim : 64 101 1 1 1
+      |-- len : 6464
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.0/activation/Relu_output_0_Y
+    |-- byte_len : 52224
+    |-+ size : 
+      |-- dim : 32 51 32 1 1
+      |-- len : 52224
+
+
+ ================== fusion layer index - 2 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.0/activation/Relu_output_0_Y
+    |-- byte_len : 52224
+    |-+ size : 
+      |-- dim : 32 51 32 1 1
+      |-- len : 52224
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.1/activation_dw/Relu_output_0_Y
+    |-- byte_len : 52224
+    |-+ size : 
+      |-- dim : 32 51 32 1 1
+      |-- len : 52224
+
+
+ ================== fusion layer index - 3 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.1/activation_dw/Relu_output_0_Y
+    |-- byte_len : 52224
+    |-+ size : 
+      |-- dim : 32 51 32 1 1
+      |-- len : 52224
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.1/activation_dw_1/Relu_output_0_Y
+    |-- byte_len : 26112
+    |-+ size : 
+      |-- dim : 32 51 16 1 1
+      |-- len : 26112
+
+
+ ================== fusion layer index - 4 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.1/activation_dw_1/Relu_output_0_Y
+    |-- byte_len : 26112
+    |-+ size : 
+      |-- dim : 32 51 16 1 1
+      |-- len : 26112
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.2/activation/Relu_output_0_Y
+    |-- byte_len : 156672
+    |-+ size : 
+      |-- dim : 32 51 96 1 1
+      |-- len : 156672
+
+
+ ================== fusion layer index - 5 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.2/activation/Relu_output_0_Y
+    |-- byte_len : 156672
+    |-+ size : 
+      |-- dim : 32 51 96 1 1
+      |-- len : 156672
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.3/activation_dw/Relu_output_0_Y
+    |-- byte_len : 39936
+    |-+ size : 
+      |-- dim : 16 26 96 1 1
+      |-- len : 39936
+
+
+ ================== fusion layer index - 6 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.3/activation_dw/Relu_output_0_Y
+    |-- byte_len : 39936
+    |-+ size : 
+      |-- dim : 16 26 96 1 1
+      |-- len : 39936
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.3/activation_dw_1/Relu_output_0_Y
+    |-- byte_len : 6656
+    |-+ size : 
+      |-- dim : 16 26 16 1 1
+      |-- len : 6656
+
+
+ ================== fusion layer index - 7 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.3/activation_dw_1/Relu_output_0_Y
+    |-- byte_len : 6656
+    |-+ size : 
+      |-- dim : 16 26 16 1 1
+      |-- len : 6656
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.4/activation/Relu_output_0_Y
+    |-- byte_len : 39936
+    |-+ size : 
+      |-- dim : 16 26 96 1 1
+      |-- len : 39936
+
+
+ ================== fusion layer index - 8 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.4/activation/Relu_output_0_Y
+    |-- byte_len : 39936
+    |-+ size : 
+      |-- dim : 16 26 96 1 1
+      |-- len : 39936
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.5/activation_dw/Relu_output_0_Y
+    |-- byte_len : 9984
+    |-+ size : 
+      |-- dim : 8 13 96 1 1
+      |-- len : 9984
+
+
+ ================== fusion layer index - 9 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.5/activation_dw/Relu_output_0_Y
+    |-- byte_len : 9984
+    |-+ size : 
+      |-- dim : 8 13 96 1 1
+      |-- len : 9984
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.5/activation_dw_1/Relu_output_0_Y
+    |-- byte_len : 3328
+    |-+ size : 
+      |-- dim : 8 13 32 1 1
+      |-- len : 3328
+
+
+ ================== fusion layer index - 10 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.5/activation_dw_1/Relu_output_0_Y
+    |-- byte_len : 3328
+    |-+ size : 
+      |-- dim : 8 13 32 1 1
+      |-- len : 3328
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.6/activation/Relu_output_0_Y
+    |-- byte_len : 19968
+    |-+ size : 
+      |-- dim : 8 13 192 1 1
+      |-- len : 19968
+
+
+ ================== fusion layer index - 11 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.6/activation/Relu_output_0_Y
+    |-- byte_len : 19968
+    |-+ size : 
+      |-- dim : 8 13 192 1 1
+      |-- len : 19968
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.7/activation_dw/Relu_output_0_Y
+    |-- byte_len : 5376
+    |-+ size : 
+      |-- dim : 4 7 192 1 1
+      |-- len : 5376
+
+
+ ================== fusion layer index - 12 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.7/activation_dw/Relu_output_0_Y
+    |-- byte_len : 5376
+    |-+ size : 
+      |-- dim : 4 7 192 1 1
+      |-- len : 5376
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.7/activation_dw_1/Relu_output_0_Y
+    |-- byte_len : 3584
+    |-+ size : 
+      |-- dim : 4 7 64 1 1
+      |-- len : 3584
+
+
+ ================== fusion layer index - 13 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.7/activation_dw_1/Relu_output_0_Y
+    |-- byte_len : 3584
+    |-+ size : 
+      |-- dim : 4 7 64 1 1
+      |-- len : 3584
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.8/activation/Relu_output_0_Y
+    |-- byte_len : 5376
+    |-+ size : 
+      |-- dim : 4 7 192 1 1
+      |-- len : 5376
+
+
+ ================== fusion layer index - 14 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.8/activation/Relu_output_0_Y
+    |-- byte_len : 5376
+    |-+ size : 
+      |-- dim : 4 7 192 1 1
+      |-- len : 5376
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.9/activation_dw/Relu_output_0_Y
+    |-- byte_len : 5376
+    |-+ size : 
+      |-- dim : 4 7 192 1 1
+      |-- len : 5376
+
+
+ ================== fusion layer index - 15 ================== 
+
++ buffer_info
+|-- in_num : 2
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.7/activation_dw_1/Relu_output_0_Y
+    |-- byte_len : 5376
+    |-+ size : 
+      |-- dim : 4 7 192 1 1
+      |-- len : 5376
+  |-+ [1th HW_BUFFER]
+    |-- idx : 1
+    |-- name : Relu_/module_list.7/activation_dw_1/Relu_output_0_Y
+    |-- byte_len : 3584
+    |-+ size : 
+      |-- dim : 4 7 64 1 1
+      |-- len : 1792
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Add_/Add_output_0_Y
+    |-- byte_len : 1792
+    |-+ size : 
+      |-- dim : 4 7 64 1 1
+      |-- len : 1792
+
+
+ ================== fusion layer index - 16 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Add_/Add_output_0_Y
+    |-- byte_len : 1792
+    |-+ size : 
+      |-- dim : 4 7 64 1 1
+      |-- len : 1792
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.11/activation/Relu_output_0_Y
+    |-- byte_len : 5376
+    |-+ size : 
+      |-- dim : 4 7 192 1 1
+      |-- len : 5376
+
+
+ ================== fusion layer index - 17 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.11/activation/Relu_output_0_Y
+    |-- byte_len : 5376
+    |-+ size : 
+      |-- dim : 4 7 192 1 1
+      |-- len : 5376
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.12/activation_dw/Relu_output_0_Y
+    |-- byte_len : 1536
+    |-+ size : 
+      |-- dim : 2 4 192 1 1
+      |-- len : 1536
+
+
+ ================== fusion layer index - 18 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.12/activation_dw/Relu_output_0_Y
+    |-- byte_len : 1536
+    |-+ size : 
+      |-- dim : 2 4 192 1 1
+      |-- len : 1536
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.12/activation_dw_1/Relu_output_0_Y
+    |-- byte_len : 768
+    |-+ size : 
+      |-- dim : 2 4 96 1 1
+      |-- len : 768
+
+
+ ================== fusion layer index - 19 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Relu_/module_list.12/activation_dw_1/Relu_output_0_Y
+    |-- byte_len : 768
+    |-+ size : 
+      |-- dim : 2 4 96 1 1
+      |-- len : 768
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : MaxPool_/module_list.14/maxpool/MaxPool_output_0_Y
+    |-- byte_len : 512
+    |-+ size : 
+      |-- dim : 1 2 256 1 1
+      |-- len : 512
+
+
+ ================== fusion layer index - 20 ================== 
+
++ buffer_info
+|-- in_num : 1
+|-+ p_in : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Flatten_/module_list.15/FlattenInput/Flatten_output_0_Y
+    |-- byte_len : 512
+    |-+ size : 
+      |-- dim : 1 1 512 1 1
+      |-- len : 512
+|-- out_num : 1
+|-+ p_out : 
+  |-+ [0th HW_BUFFER]
+    |-- idx : 0
+    |-- name : Gemm_183_Y
+    |-- byte_len : 32
+    |-+ size : 
+      |-- dim : 1 1 8 1 1
+      |-- len : 16

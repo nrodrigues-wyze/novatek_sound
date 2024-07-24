@@ -1,0 +1,15 @@
+{
+    "Gemm_183_Y": {
+        "layer_type": "Gemm",
+        "ori_graph_name": "/module_list.15/FC_Layer/Gemm",
+        "is_network_in": false,
+        "is_network_out": true,
+        "out_idx": [0],
+        "input0_bitdepth": 8,
+        "input0_sign_bit_num": 0,
+        "input0_frac_bit_num": 6,
+        "output0_bitdepth": 16,
+        "output0_sign_bit_num": 1,
+        "output0_frac_bit_num": 10
+    }
+}
