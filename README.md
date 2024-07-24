@@ -16,3 +16,11 @@ python3 train.py \
 
 
 Download data from : wyze-ai-team-individual-work-data/neil/all_train_20240503_real16k.h5
+
+To prepare the Sound training data:
+```
+python3 prep_training_data/export_sound_data.py
+
+python3 prep_training_data/merge.py
+```
+
